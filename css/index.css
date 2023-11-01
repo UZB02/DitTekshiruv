@@ -1,0 +1,223 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+.container
+{
+    width: 1200px;
+    margin: 0 auto;
+}
+nav
+{
+    margin-top: 30px;
+    position: absolute;
+    width: 100%;
+}
+nav .container
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+}
+nav .container .left
+{
+    display: flex;
+    gap: 30px;
+}
+nav .container .left a
+{
+    font-size: 16px;
+    font-weight: 600;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    letter-spacing: 0.8px;
+    color: black;
+}
+nav .container .center a
+{
+    font-size: 40px;
+    font-weight: bold;
+    color: rgb(244, 117, 13);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+nav .container .right a
+{
+     padding-right: 20px; 
+     font-weight: 700;
+     color: black;
+}
+.home
+{
+    width: 100%;
+    height: 95vh;
+    background-color: gainsboro;
+    padding-top: 30px;
+}
+.home .container
+{
+    padding: 20px 0;
+    width: 950px;
+    display: flex;
+    /* background-color: greenyellow; */
+}
+.home .container .left
+{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 50%;
+    /* background-color: white; */
+    margin-top: 100px;
+}
+.home .container .left h1
+{
+    font-size: 60px;
+    font-weight: 550;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.home .container .left button
+{
+     width: 40%;
+     height: 7vh;
+     border: none;
+     border-radius: 10px;
+     background-color: rgb(241, 139, 56);
+     color: #fff;
+     letter-spacing: 0.5px;
+     transition: 0.6s all ease;
+}
+.home .container .left button:hover
+{
+    background-color: transparent;
+    border: rgb(241, 139, 56) 2px solid;
+    color: black;
+}
+.home .container .right
+{
+    width: 50%;
+    padding-top: 35px;
+}
+.home .container .right img
+{
+    width: 100%;
+    height: 80vh;
+}
+.service
+{
+    margin: 20px 0;
+}
+.service .container
+{
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 95vh;
+    gap: 80px;
+}
+.service .container .quti
+{
+    text-align: start;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.service .container .quti:nth-child(1)
+{
+    border-right: 3px solid rgb(169, 167, 167);
+}
+.service .container h3
+{
+    color: orange;
+    font-family: initial;
+}
+.service .container h2
+{
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+.biogs
+{
+    padding: 10px 0;
+}
+.biogs h1
+{
+    text-align: center;
+    letter-spacing: 1.5px;
+    padding: 30px 0;
+}
+::-webkit-scrollbar
+{
+    width: 0;
+}
+.biogs .container
+{
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-x: scroll;
+    gap: 20px;
+}
+.biogs .container .box
+{
+    width: 20%;
+    height: 50vh;
+    background-color: gainsboro;
+    display: flex;
+    /* justify-content: center; */
+    /* align-items: center; */
+    flex-direction: column;
+    padding: 0 20px;
+    gap: 20px;
+    animation: animbox infinite 20s;
+}
+@keyframes animbox
+{
+    15%{
+        transform: translateX(100%);
+    }
+}
+.biogs .container .box h3
+{
+    font-size: 21px;
+    letter-spacing: 1px;
+}
+.biogs .container .box p
+{
+    letter-spacing: 0.5px;
+}
+.biogs .container .box video
+{
+    background-color: red;
+    height: 30vh;
+}
+.biogs .container .box .quti
+{
+    display: flex;
+    width: 100%;
+    height: 30px;
+    /* background-color: goldenrod; */
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+.biogs .container .box .quti button
+{
+    width: 90px;
+    height: 30px;
+    background-color: black;
+    color: #fff;
+    border-radius: 40px;
+}
+.biogs .container .box .quti p
+{
+    background-color: gold;
+    padding: 13px 12px;
+    border-radius: 50%;
+    text-align: center;
+}
